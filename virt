@@ -1,0 +1,14 @@
+sudo apt-get update
+
+egrep -c ‘(vmx|svm)’ /proc/cpuinfo
+	greater than 0
+
+kvm-ok
+	
+	sudo apt install cpu-checker
+
+sudo apt install -y qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils
+
+ sudo systemctl start libvirtd
+
+sudo systemctl status libvirtd
